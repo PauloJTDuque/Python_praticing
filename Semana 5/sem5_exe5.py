@@ -3,6 +3,9 @@ import random
 def busca_bin(l, x, inicio, fim):
     meio = (inicio + fim) // 2
 
+    if fim < inicio:
+        return -1
+
     if x == l[meio]:
         return meio
 
